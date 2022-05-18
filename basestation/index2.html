@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+        <script src="alert/dist/sweetalert-dev.js"></script>
+        <link rel="stylesheet" href="alert/dist/sweetalert.css">
+       
+    <body>
+        
+      <header style="background: transparent;">
+
+     <div class="topnav" id="myTopnav">
+            <a href="#home" class="active" onclick="alertMessage()">BASE STATION</a>
+            <a href="C:\xampp\htdocs\newsletter\index.html">join the newsletter</a>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i> -->
+            </a>
+          </div>
+    </header>
+
+       <section> 
+        <img  src="mars_bg2.jpeg" id="bg" >
+        <img src="0_planet-Mars-with-it-moons-Phobos-and-Deimos-removebg-preview.png" id="moon">
+        <!-- add two different images for moon and have them move in different directions -->
+        <img src="earth-wallpapers-4-removebg.png" id="earth">
+        <h2 id="text">MARS</h2>   
+       </section>
+
+
+
+   
+         <div class="story"> 
+           <p class="storytext" id="text-1">The rusty world is full of mysteries—and some of the solar system's most extreme geology. Learn more about Earth's smaller, colder neighbor. </p>
+          <img class="storyimg" id="pic-1" src="mars_content/pic1.jpg">
+         </div>
+
+         <div class="story"> 
+          <p class="storytext">
+            The red planet Mars, named for the Roman god of war, has long been an omen in the night sky was symbolic of blood and war.  
+          </p>
+          <img class="storyimg" src="mars_content/pic2.jpg">
+        </div>
+
+        <div class="story"> 
+          <p class="storytext">
+            but to many people today
+          </p>
+          <img class="storyimg" src="mars_content/pic3.jpeg">
+        </div>
+
+        <div class="story"> 
+          <p class="storytext">
+            the red planet may hold the key
+           for a bright new future for humanity
+          </p>
+          <img class="storyimg" src="mars_content/pic4.jpg">
+        </div>
+        <div class="story"> 
+          <p class="storytext">
+            the story of mars began about 4.5
+            billion years ago when gas and dust
+            swirl together to form the fourth planet
+            from the sun
+          </p>
+          <img class="storyimg" src="mars_content/pic5.jpeg">
+        </div>
+        <!-- <div class="story"> 
+          <p class="storytext">
+            mars is the second smallest planet in
+            the solar system  
+          </p>
+          <img class="storyimg" src="mars_content/pic6.jpeg">
+        </div> -->
+
+        <div class="story"> 
+          <p class="storytext">
+            the solar system with a diameter just
+            shy of the width of africa
+          </p>
+          <img class="storyimg" src="mars_content/pic7.jpeg">
+        </div>
+        
+        <!-- <div class="story"> 
+          <p class="storytext">
+            in fact its entire surface area is
+            similar to that of all of earth's
+            continents combined
+            
+          </p>
+          <img class="storyimg" src="mars_content/pic8.jpeg">
+        </div> -->
+        
+        <div uk-slideshow>
+          <ul class="uk-slideshow-items">
+            <div class="story"> 
+              <p class="storytext">
+              much like its terrestrial cousin mars is
+              dense and has a rocky composition            
+              </p>
+              <li><img class="storyimg" src="mars_content/pic9.jpeg"></li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="story"> 
+          <p class="storytext">
+            at the center of the planet is a core
+            made of iron nickel and sulfur
+          </p>
+          <img class="storyimg" src="mars_content/pic10.jpeg">
+        </div>
+
+
+        <div class="story"> 
+          <p class="storytext">
+            enveloping the core is a rocky mantle
+            made of silicate minerals
+            
+          </p>
+          <img class="storyimg" src="mars_content/pic11.jpeg">
+        </div>
+ 
+        <div class="story"> 
+          <p class="storytext">
+            and a crust rich in iron
+          </p>
+          <img class="storyimg" src="mars_content/pic12.jpeg">
+        </div>
+      
+        <div class="story"> 
+          <p class="storytext">
+            these iron minerals react with the trace
+            amounts of oxygen in mars's atmosphere
+          </p>
+          <img id="mars-rust" onmouseover="setNewImg()" onmouseout="setOldImg()" class="storyimg" src="mars_content/pic13.jpeg">
+        </div>
+
+        <!--<div class="story"> 
+          <p class="storytext" style="padding-right: 198px">
+            and rusts                   
+          </p>
+          <img class="storyimg" src="mars_content/pic14.jpeg">
+  
+        </div>
+
+        <div class="story"> 
+          <p class="storytext">
+            giving the planet its signature reddish hue
+          </p>
+          <img class="storyimg" src="mars_content/pic15.jpeg">
+        </div>-->
+      
+        <div class="story"> 
+          <p class="storytext">
+            giving the planet its signature reddish hue <br>
+            today mars is dry desolate and cold with temperatures dropping as low as negative
+            225 degrees fahrenheit 
+          </p>
+          <img id="gale-center" onmouseover="setNewImg()" onmouseout="setOldImg()" class="storyimg" src="mars_content/pic16.jpeg">
+        </div>
+
+        <!-- <div class="story"> 
+          <p class="storytext">
+             
+          </p>
+          <img class="storyimg" src="mars_content/pic17.jpeg">
+        </div> -->
+
+        <!-- <div class="story"> 
+          <p class="storytext">
+            
+          </p>
+          <img class="storyimg" src="mars_content/pic18.jpeg">
+        </div> -->
+
+        <div class="story"> 
+          <p class="storytext">
+            but billions of years ago the planet was
+            much warmer more geologically active and
+            had a watery surface <br>
+            lake beds and river valleys snake along
+            the face of mars indicating that liquid
+            water was for a time present 
+          </p>
+          <img id="nili" onmouseover="setNewImg()" onmouseout="setOldImg()" class="storyimg" src="mars_content/pic19.jpeg">
+        </div>
+
+        <div class="story"> 
+          <p class="storytext">
+            about 50 million years ago soon
+            after earth's dinosaurs died out mars
+            volcanoes also went extinct
+          </p>
+          <img id="volcano" onmouseover="setNewImg()" onmouseout="setOldImg()" class="storyimg" src="mars_content/pic22.jpeg">
+        </div>
+
+        <div class="story"> 
+          <p class="storytext">    
+          because of factors such as the presence
+          of water some scientists believe life
+          may have existed on the red planet and
+          may exist again
+        </p>
+          <img class="storyimg" src="mars_content/pic29.jpeg">
+          <img class="storyimg" src="mars_content/pic30.jpeg">
+        </div>
+         
+
+       <script src="script.js"></script>
+      </head>
+    </body>
+</html>
